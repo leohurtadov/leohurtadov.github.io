@@ -1,47 +1,41 @@
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
 }
 
-.b-example-divider {
-    height: 3rem;
-    background-color: rgba(0, 0, 0, .1);
-    border: solid rgba(0, 0, 0, .15);
-    border-width: 1px 0;
-    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-  
-.form-control-dark {
-    color: #fff;
-    background-color: var(--bs-dark);
-    border-color: var(--bs-gray);
+.header {
+  outline: 1px solid gold;
+  height: 3rem;
 }
 
-.form-control-dark:focus {
-    color: #fff;
-    background-color: var(--bs-dark);
-    border-color: #fff;
-    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+.menu {
+  display: flex;
 }
-  
-.bi {
-    vertical-align: -.125em;
-    fill: currentColor;
+
+.menu-item {
+  list-style: none;
+  flex: 1;
+  outline: 1px solid cyan;
+  line-height: 3rem;
+  text-align: center;
+  transition: flex 0.5s;
+  background-color: #1e88e5;
 }
-  
-.text-small {
-    font-size: 85%;
+
+.menu-item:hover {
+  flex: 8;
+  background-color: #005cb2;
+  color: white;
+  transition: flex 0.5s;
 }
-  
-.dropdown-toggle {
-    outline: 0;
-}
+
+/*# sourceMappingURL=styles.css.map */
