@@ -17,25 +17,67 @@ body {
   height: 3rem;
 }
 
+.container {
+  display: flex;
+  height: inherit;
+}
+
+.content {
+  text-align: center;
+  outline: 1px solid cyan;
+  flex: 1;
+  padding-top: 2rem;
+}
+
+.title__text {
+  font-size: 2rem;
+}
+
+.footer {
+  display: flex;
+  outline: 1px solid magenta;
+  height: 4rem;
+  margin-top: auto;
+  text-align: center;
+  align-items: center;
+  background-color: #52565e;
+}
+
+.footer__sign {
+  flex: 1;
+  color: white;
+}
+
 .menu {
   display: flex;
 }
 
-.menu-item {
+.menu__item {
   list-style: none;
   flex: 1;
-  outline: 1px solid cyan;
+  outline: 1px solid white;
   line-height: 3rem;
   text-align: center;
   transition: flex 0.5s;
   background-color: #1e88e5;
 }
 
-.menu-item:hover {
+.menu__item:hover {
   flex: 8;
   background-color: #005cb2;
   color: white;
   transition: flex 0.5s;
+}
+
+.menu__item a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.menu__item a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=styles.css.map */
